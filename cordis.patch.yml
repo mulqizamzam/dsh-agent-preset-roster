@@ -1,0 +1,13 @@
+# dsh-agent-preset-roster — plugin manifest.
+#
+# One insert row mounts the plugin; `config` is passed to `apply(ctx, config)`.
+#
+# Knobs (all optional; defaults in index.js):
+#   root : ''  — preset root to read. Empty resolves to the DSH user preset
+#                root ($DSH_HOME/.agent-presets, or ~/.dsh/.agent-presets when
+#                DSH_HOME is unset). Set an absolute path to read another tree.
+- insert:
+    - id: dsh-agent-preset-roster
+      name: dsh-agent-preset-roster
+      config:
+        root: ""

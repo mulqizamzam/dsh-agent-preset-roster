@@ -1,0 +1,26 @@
+{
+  "name": "dsh-agent-preset-roster",
+  "version": "0.1.0",
+  "description": "Registers the $DSH_HOME/.agent-presets roster (15 role presets + orchestrator) with the agent-preset registry so sessions can select them in the Web GUI.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dependencies": {
+    "@deepseek-ai/cordis-plugin-include": "link:/home/administrator/deepseek-harness/vendor/include",
+    "@deepseek-ai/schemastery": "link:/home/administrator/deepseek-harness/vendor/schemastery",
+    "js-yaml": "link:/home/administrator/deepseek-harness/vendor/include/node_modules/js-yaml"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "license": "MIT"
+}
