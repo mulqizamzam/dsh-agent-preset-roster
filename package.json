@@ -7,8 +7,12 @@
   "files": [
     "index.js",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "e2e"
   ],
+  "scripts": {
+    "test": "node e2e/roster.e2e.mjs isolate ."
+  },
   "dependencies": {
     "@deepseek-ai/cordis-plugin-include": "link:/home/administrator/deepseek-harness/vendor/include",
     "@deepseek-ai/schemastery": "link:/home/administrator/deepseek-harness/vendor/schemastery",
